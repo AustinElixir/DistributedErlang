@@ -1,3 +1,4 @@
 .vagrant
 src/*.beam
 src_ref/*.beam
+erl_crash.dump
