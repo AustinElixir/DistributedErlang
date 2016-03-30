@@ -3,7 +3,7 @@ This project is a collection of simple functions that are used to demonstrate Er
 
 The tutorial will take you through all the basics needed to setup a fully functioning Erlang cluster of nodes.
 
-After completing this exercise, you'll have the capability of setting up custom distribution algorithms for a simple factorial service in your Erlang cluster.
+After completing this exercise, you'll have the capability of setting up custom distribution algorithms for a simple [Triangular number](https://en.wikipedia.org/wiki/Triangular_number) service in your Erlang cluster.
 
 Setup Guide
 ===========
