@@ -1,5 +1,5 @@
 # DistributedErlang
-This project is a collection of simple functions that are used to demonstrate Erlangs native distribution capabilites.
+This project is a collection of simple functions that are used to demonstrate Erlang's native distribution capabilities.
 
 The tutorial will take you through all the basics needed to setup a fully functioning Erlang cluster of nodes.
 
@@ -7,7 +7,7 @@ After completing this exercise, you'll have the capability of setting up custom 
 
 Setup Guide
 ===========
-#### Dowload Project Stucture
+#### Download Project Structure
 
 - `git clone https://github.com/austinerlang/DistributedErlang`
 
