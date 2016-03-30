@@ -45,4 +45,4 @@ dist_rr(N, [Node|Rest]) ->
 	
 %% Send a message to a node
 send_message(Node) ->
-	{facserve, Node} ! {self(), rand()}.
+	{triserve, Node} ! {self(), rand()}.

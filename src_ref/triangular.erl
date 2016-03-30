@@ -1,14 +1,14 @@
--module(factorial).
+-module(triangular).
 -compile(export_all).
 
 start() ->
 	spawn(?MODULE, init, []).
 
 init() ->
-	register(facserve, self()),
-	facLoop().
+	register(triserve, self()),
+	triLoop().
 
-facLoop() ->
+triLoop() ->
 	receive
 		{Pid, N} ->
 			Pid ! {ok, node(), calc(N)};
@@ -17,7 +17,7 @@ facLoop() ->
 		_ ->
 			unknown
 	end,
-	facLoop().
+	triLoop().
 
 calc(0) -> 0;
 calc(N) when N > 0 ->
