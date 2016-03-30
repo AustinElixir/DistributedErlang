@@ -18,7 +18,21 @@ Setup Guide
 Make sure you have vagrant [installed](http://docs.vagrantup.com/v2/installation/)
 
 - `vagrant up` & select your bridge interface.
-- `vagrant ssh`
+
+```bash
+==> default: Available bridged network interfaces:
+1) eth0
+2) wlan0
+3) ...
+4) ...
+==> default: When choosing an interface, it is usually the one that is
+==> default: being used to connect to the internet.
+    default: Which interface should the network bridge to?
+```
+
+For our lab you'll probably be using your wireless interface. Enter the number listed next to the appropriate interface.
+
+- `vagrant ssh` will connect you into your virtual environment.
 
 #### Tutorial
 
