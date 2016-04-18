@@ -11,14 +11,16 @@ init() ->
 triLoop() ->
 	receive
 		{Pid, N} ->
-			Pid ! {ok, node(), calc(N)};
+			Pid ! {ok, triangular:calc(N)};
 		exit ->
 			exit(normal);
 		_ ->
 			unknown
 	end,
-	triLoop().
+	triangular:triLoop().
 
-calc(0) -> 0;
-calc(N) when N > 0 ->
-	N + calc(N - 1).
+calc(N) -> calc(N, 0).
+
+calc(0, Acc) -> Acc;
+calc(N, Acc) when N > 0 -> 
+	calc(N - 1, Acc + N).

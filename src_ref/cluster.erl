@@ -3,9 +3,9 @@
 %%% These functions are only useful for class instruction
 %%% The overall distribution techniques demonstrated here would need a lot of improvement
 
-connect() -> net_adm:ping('bar@10.1.5.149'),
+connect() -> net_adm:ping('hub@172.16.1.1'),
 			 seed(),
-			 factorial:start().
+			 triangular:start().
 
 seed() -> random:seed( erlang:phash2([node()]),
 	              	   erlang:monotonic_time(),
@@ -45,4 +45,4 @@ dist_rr(N, [Node|Rest]) ->
 	
 %% Send a message to a node
 send_message(Node) ->
-	{triserve, Node} ! {self(), rand()}.
+	{triserve, Node} ! {self(), 10}.
